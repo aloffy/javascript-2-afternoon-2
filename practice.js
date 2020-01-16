@@ -17,7 +17,9 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
+function first(arr) {
+  return arr[0]
+}
 
 
 
@@ -32,7 +34,9 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
+function last(arr) {
+  return arr[arr.length - 1]
+}
 
 
 
@@ -47,7 +51,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
+function looper(family) {
+  for (i = 0; i < family.length; i++) {
+    alert(family[i])
+  }
+}
 
 
 
@@ -62,7 +70,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
+function reversedLooper(letters) {
+  for (i = letters.length - 1; i >= 0; i--) {
+    alert(letters[i])
+  }
+}
 
 
 
@@ -70,6 +82,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 // Do not edit the code below.
 var nums = [1,2,3,6,22,98,45,23,22,12];
+
 // Do not edit the code above.
 
 /*
@@ -77,7 +90,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+function evenFinder(nums) {
+  let evenArray = [];
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 == 0) {
+      evenArray.push(nums[i])
+    }
+  }
+  return evenArray
+}
 
 
 
@@ -106,7 +127,7 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+
 
 
 
@@ -128,7 +149,7 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+
 
 
 
@@ -157,7 +178,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
+
 
 
 
@@ -167,7 +188,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-//Code Here
+
 
 
 
@@ -183,7 +204,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+
 
 
 
@@ -208,7 +229,7 @@ for(var i = 0; i < num2; i++){
   Return the longer of the two arrays.
 */
 
-//Code Here
+
 
 
 
@@ -220,7 +241,7 @@ for(var i = 0; i < num2; i++){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-//Code Here
+
 
 
 
@@ -261,7 +282,7 @@ var colt = {
   After that, console.log the length of the Array and make sure that it's equal to 4. 
 */
 
-//Code Here
+
 
 
 
@@ -270,7 +291,7 @@ var colt = {
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-//Code Here
+
 
 
 
@@ -282,7 +303,7 @@ var colt = {
   Create an empty array called users.
 */
 
-//Code Here
+
 
 
 
@@ -303,7 +324,7 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
+
 
 
 
@@ -317,7 +338,7 @@ var user1 = {
   Once you find the array index he's located in, delete him from the array.
 */
 
-//Code Here
+
 
 
 
