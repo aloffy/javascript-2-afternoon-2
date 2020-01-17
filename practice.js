@@ -199,8 +199,8 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 function removeItem(myGroceryList, item) {
-  if (myGroceryList[i] == item) {
-    console.log(myGroceryList[i])
+  if (myGroceryList[i] === item) {
+    // console.log(myGroceryList[i])
   }
 }
 
@@ -214,7 +214,13 @@ function addItem(myGroceryList, item) {
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-
+function maker() {
+  let array = [];
+  for (i = 1; i <= 215; i++) {
+    array.push(i)
+  }
+  return array
+}
 
 
 
@@ -230,7 +236,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-
+function addTen(numbers) {
+  let newArray = []
+  for (i = 0; i < numbers.length; i++) {
+    newArray.push(Number(numbers[i]) + 10)
+  }
+  return newArray
+}
 
 
 
@@ -255,7 +267,9 @@ for(var i = 0; i < num2; i++){
   Return the longer of the two arrays.
 */
 
-
+function longer(arr1, arr2) {
+  return arr1.length > arr2.length ? arr1 : arr2;
+}
 
 
 
@@ -267,7 +281,17 @@ for(var i = 0; i < num2; i++){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-
+function both(arr1, arr2) {
+  bothArray = [];
+  for (i = 0; i < arr1.length; i++) {
+    for (j = i; j < arr1.length; j++) {
+      if (arr1[j] === arr2[i]) {
+        bothArray.push(arr2[i])
+      }
+    }
+  }
+  return bothArray
+}
 
 
 
