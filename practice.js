@@ -127,7 +127,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-
+function divider(numbersArray) {
+  let evensArray = [];
+  let oddsArray = [];
+  for (i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] % 2 == 0) {
+      evensArray.push(numbersArray[i])
+    }
+    else {
+      oddsArray.push(numbersArray[i])
+    }
+  }
+  numbersArray = [evensArray, oddsArray]
+  return numbersArray
+}
 
 
 
@@ -149,8 +162,15 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-
-
+function finder(array) {
+  let randomNumber = getRandomArbitrary();
+  for (i = 0; i < array.length; i++) {
+    if (randomNumber == array[i]) {
+      return true
+    }
+  }
+  return false
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -178,9 +198,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
+function removeItem(myGroceryList, item) {
+  if (myGroceryList[i] == item) {
+    console.log(myGroceryList[i])
+  }
+}
 
-
-
+function addItem(myGroceryList, item) {
+  
+}
 
 ////////// PROBLEM 9 //////////
 
